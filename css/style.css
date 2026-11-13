@@ -1,0 +1,192 @@
+/* Custom Styles & Animation Utilities for Malak Hamdy Portfolio */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-bg-base: #FFFFFF;
+  --color-bg-alt: #FAFAFC;
+  --color-card: #FFFFFF;
+  --color-primary: #5B1363;
+  --color-primary-dark: #450D4B;
+  --color-accent: #7B1FA2;
+  --color-accent-soft: #F5EEF7;
+  --color-text-main: #222222;
+  --color-text-muted: #555555;
+  --color-border: #ECE8F0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--color-bg-base);
+  color: var(--color-text-main);
+  overflow-x: hidden;
+}
+
+.font-serif-title {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F5FA;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8C5E0;
+  border-radius: 9999px;
+  border: 2px solid #F7F5FA;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5B1363;
+}
+
+/* Subtle background noise texture effect */
+.bg-subtle-pattern {
+  background-image: radial-gradient(#E8E0EE 1.3px, transparent 1.3px);
+  background-size: 24px 24px;
+}
+
+/* Dotted grid pattern matching reference */
+.bg-purple-dots {
+  background-image: radial-gradient(#5B1363 1.6px, transparent 1.6px);
+  background-size: 14px 14px;
+}
+
+.bg-purple-dots-light {
+  background-image: radial-gradient(#C4A2CE 1.5px, transparent 1.5px);
+  background-size: 14px 14px;
+}
+
+/* Floating animation */
+@keyframes softFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-soft-float {
+  animation: softFloat 4.5s ease-in-out infinite;
+}
+
+.animate-soft-float-delayed {
+  animation: softFloat 5s ease-in-out 1.8s infinite;
+}
+
+/* Fade in scroll reveals */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delay classes */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+
+/* Interactive Card Lift */
+.card-hover-lift {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 30px -10px rgba(91, 19, 99, 0.12);
+}
+
+/* Modern Pill Tag */
+.pill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  border-radius: 9999px;
+  background-color: #F5EEF7;
+  color: #5B1363;
+  border: 1px solid #EBD7F0;
+}
+
+/* Glassmorphism Navigation */
+.nav-scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px -4px rgba(91, 19, 99, 0.08);
+  border-bottom: 1px solid rgba(235, 225, 240, 0.9);
+}
+
+/* Progress bar fill transition */
+.skill-bar-fill {
+  transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Toast Notification Animation */
+@keyframes slideDownFade {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.toast-animate-in {
+  animation: slideDownFade 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Modal animation */
+@keyframes modalScale {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-content-animate {
+  animation: modalScale 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Print Styles for CV download/print */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #cv-modal-content, #cv-modal-content * {
+    visibility: visible;
+  }
+  #cv-modal-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-shadow: none !important;
+  }
+}

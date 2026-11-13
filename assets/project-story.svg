@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="100%" height="100%">
+  <defs>
+    <filter id="storyShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#5B1363" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="420" rx="20" fill="#F5EEF7"/>
+
+  <!-- Visual Storytelling Grid Mockup -->
+  <g filter="url(#storyShadow)" transform="translate(100, 35)">
+    <!-- Main Board -->
+    <rect width="400" height="350" rx="16" fill="#FFFFFF" stroke="#ECE8F0" stroke-width="1.5"/>
+
+    <!-- Title Bar -->
+    <text x="35" y="42" font-family="'Playfair Display', serif" font-size="16" font-style="italic" fill="#5B1363">Alexandria Coast: A Visual Tale</text>
+    <rect x="290" y="28" width="75" height="18" rx="9" fill="#F5EEF7"/>
+    <text x="327" y="40" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="700" fill="#5B1363" text-anchor="middle">STORYBOARD</text>
+
+    <!-- Photo Card 1: Lighthouse / Mediterranean silhouette in twilight purple/indigo -->
+    <g transform="translate(35, 65)">
+      <rect width="180" height="150" rx="10" fill="#4A1E5C"/>
+      <!-- Sea Waves -->
+      <path d="M 0 100 Q 45 90 90 100 T 180 100 L 180 150 L 0 150 Z" fill="#361244"/>
+      <path d="M 0 120 Q 45 110 90 120 T 180 120 L 180 150 L 0 150 Z" fill="#24082E"/>
+      <!-- Moon / Twilight Sun -->
+      <circle cx="90" cy="55" r="22" fill="#EBD7F0" opacity="0.85"/>
+      <!-- Lighthouse silhouette -->
+      <path d="M 85 85 L 87 65 L 93 65 L 95 85 Z" fill="#1C0624"/>
+      <!-- Badge label -->
+      <rect x="12" y="12" width="60" height="15" rx="4" fill="#000000" fill-opacity="0.4"/>
+      <text x="42" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#FFFFFF" text-anchor="middle">01. HORIZON</text>
+    </g>
+
+    <!-- Photo Card 2: Architectural Arch -->
+    <g transform="translate(230, 65)">
+      <rect width="135" height="150" rx="10" fill="#EBD7F0"/>
+      <!-- Arches -->
+      <path d="M 30 150 L 30 75 Q 67 35 105 75 L 105 150 Z" fill="#C4A2CE"/>
+      <path d="M 45 150 L 45 85 Q 67 55 90 85 L 90 150 Z" fill="#5B1363" opacity="0.9"/>
+      <rect x="12" y="12" width="60" height="15" rx="4" fill="#000000" fill-opacity="0.3"/>
+      <text x="42" y="23" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#FFFFFF" text-anchor="middle">02. ARCHES</text>
+    </g>
+
+    <!-- Text Narrative Block -->
+    <g transform="translate(35, 235)">
+      <rect width="210" height="85" rx="8" fill="#FAFAFC" stroke="#ECE8F0" stroke-width="1"/>
+      <text x="18" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#222222">Narrative Tone &amp; Concept</text>
+      <text x="18" y="46" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#555555">Bridging historic Mediterranean twilight vibes</text>
+      <text x="18" y="59" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" fill="#555555">with modern royal violet digital aesthetics.</text>
+      <!-- Tag pills -->
+      <rect x="18" y="68" width="45" height="12" rx="6" fill="#F5EEF7"/>
+      <text x="40" y="77" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="700" fill="#5B1363" text-anchor="middle">CANVA</text>
+      <rect x="68" y="68" width="55" height="12" rx="6" fill="#F5EEF7"/>
+      <text x="95" y="77" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="700" fill="#5B1363" text-anchor="middle">STORYTELL</text>
+    </g>
+
+    <!-- Small Quote Card in Royal Purple -->
+    <g transform="translate(260, 235)">
+      <rect width="105" height="85" rx="8" fill="#5B1363"/>
+      <text x="52" y="35" font-family="'Playfair Display', serif" font-size="20" fill="#DFC1E6" text-anchor="middle">“</text>
+      <text x="52" y="52" font-family="'Playfair Display', serif" font-size="8.5" font-style="italic" fill="#FFFFFF" text-anchor="middle">Where the sea</text>
+      <text x="52" y="64" font-family="'Playfair Display', serif" font-size="8.5" font-style="italic" fill="#FFFFFF" text-anchor="middle">meets creative</text>
+      <text x="52" y="76" font-family="'Playfair Display', serif" font-size="8.5" font-style="italic" fill="#FFFFFF" text-anchor="middle">expression.</text>
+    </g>
+  </g>
+</svg>

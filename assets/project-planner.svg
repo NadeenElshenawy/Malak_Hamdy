@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="100%" height="100%">
+  <defs>
+    <filter id="planShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#5B1363" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="420" rx="20" fill="#F5EEF7"/>
+
+  <!-- Content Matrix Planner Mockup -->
+  <g filter="url(#planShadow)" transform="translate(100, 35)">
+    <rect width="400" height="350" rx="16" fill="#FFFFFF" stroke="#ECE8F0" stroke-width="1.5"/>
+
+    <!-- Header bar -->
+    <rect x="0" y="0" width="400" height="55" rx="16" fill="#5B1363"/>
+    <text x="25" y="34" font-family="'Playfair Display', serif" font-size="15" font-weight="bold" fill="#FFFFFF">30-Day Content Pillar &amp; Growth Matrix</text>
+    <rect x="320" y="18" width="55" height="20" rx="10" fill="#7B1FA2"/>
+    <text x="347" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="700" fill="#FFFFFF" text-anchor="middle">ACTIVE</text>
+
+    <!-- Calendar / Pillar Matrix layout -->
+    <g transform="translate(25, 75)">
+      <!-- Col 1: Pillar: Education -->
+      <g transform="translate(0, 0)">
+        <rect width="105" height="150" rx="10" fill="#FAFAFC" stroke="#ECE8F0" stroke-width="1"/>
+        <rect x="10" y="12" width="85" height="20" rx="6" fill="#F5EEF7"/>
+        <text x="52" y="25" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="700" fill="#5B1363" text-anchor="middle">1. EDUCATION</text>
+        <!-- Mock rows -->
+        <rect x="10" y="42" width="85" height="26" rx="4" fill="#FFFFFF" stroke="#ECE8F0" stroke-width="0.8"/>
+        <text x="18" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#222222">Design Tips (Reel)</text>
+        <rect x="10" y="74" width="85" height="26" rx="4" fill="#FFFFFF" stroke="#ECE8F0" stroke-width="0.8"/>
+        <text x="18" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#222222">Font Pairings (Post)</text>
+        <rect x="10" y="106" width="85" height="26" rx="4" fill="#FFFFFF" stroke="#ECE8F0" stroke-width="0.8"/>
+        <text x="18" y="122" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#222222">Color Guide (PDF)</text>
+      </g>
+
+      <!-- Col 2: Pillar: Inspiration -->
+      <g transform="translate(120, 0)">
+        <rect width="105" height="150" rx="10" fill="#FAFAFC" stroke="#ECE8F0" stroke-width="1"/>
+        <rect x="10" y="12" width="85" height="20" rx="6" fill="#F5EEF7"/>
+        <text x="52" y="25" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="700" fill="#5B1363" text-anchor="middle">2. INSPIRATION</text>
+        <!-- Mock rows -->
+        <rect x="10" y="42" width="85" height="26" rx="4" fill="#FFFFFF" stroke="#ECE8F0" stroke-width="0.8"/>
+        <text x="18" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#222222">Moodboard Monday</text>
+        <rect x="10" y="74" width="85" height="26" rx="4" fill="#FFFFFF" stroke="#ECE8F0" stroke-width="0.8"/>
+        <text x="18" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#222222">Behind The Process</text>
+        <rect x="10" y="106" width="85" height="26" rx="4" fill="#FFFFFF" stroke="#ECE8F0" stroke-width="0.8"/>
+        <text x="18" y="122" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#222222">Creative Quotes</text>
+      </g>
+
+      <!-- Col 3: Pillar: Community & Story -->
+      <g transform="translate(240, 0)">
+        <rect width="110" height="150" rx="10" fill="#FAFAFC" stroke="#ECE8F0" stroke-width="1"/>
+        <rect x="10" y="12" width="90" height="20" rx="6" fill="#F5EEF7"/>
+        <text x="55" y="25" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="700" fill="#5B1363" text-anchor="middle">3. STORYTELL</text>
+        <!-- Mock rows -->
+        <rect x="10" y="42" width="90" height="26" rx="4" fill="#FFFFFF" stroke="#ECE8F0" stroke-width="0.8"/>
+        <text x="18" y="58" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#222222">Q&amp;A Poll Sessions</text>
+        <rect x="10" y="74" width="90" height="26" rx="4" fill="#FFFFFF" stroke="#ECE8F0" stroke-width="0.8"/>
+        <text x="18" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#222222">Learning Journey</text>
+        <rect x="10" y="106" width="90" height="26" rx="4" fill="#FFFFFF" stroke="#ECE8F0" stroke-width="0.8"/>
+        <text x="18" y="122" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#222222">Weekly Recap Reel</text>
+      </g>
+    </g>
+
+    <!-- Bottom KPI indicator ribbon -->
+    <g transform="translate(25, 240)">
+      <rect width="350" height="42" rx="8" fill="#F5EEF7"/>
+      <circle cx="25" cy="21" r="10" fill="#5B1363"/>
+      <path d="M 21 21 L 24 24 L 30 18" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+      <text x="45" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="8" font-weight="700" fill="#222222">Format: Canva Pro &amp; Notion Framework</text>
+      <text x="45" y="29" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" fill="#555555">Structured to boost engagement consistency and visual coherence.</text>
+    </g>
+  </g>
+</svg>
