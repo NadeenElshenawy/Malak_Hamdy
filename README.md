@@ -30,8 +30,13 @@ malak_hamdy_landing_page/
 │   ├── project-story.svg      # Alexandria Coastal Reverie storyboard
 │   ├── project-candles.svg    # Lumière Candle Co. brand mockups
 │   └── project-planner.svg    # 30-Day Content Matrix roadmap
-└── README.md                  # Documentation & usage guide
+├── HOW_TO_UPDATE.md           # Step-by-step guide for adding projects & updating data
+└── README.md                  # Project documentation & overview
 ```
+
+## 📖 Maintenance & How to Update
+Looking to add new portfolio projects, update contact details, adjust skills, or update the CV?  
+👉 **Check out the detailed [HOW_TO_UPDATE.md](file:///d:/Educational_Content/DEPI/FREELANCING/Mockup%20Projects/malak_hamdy/HOW_TO_UPDATE.md) guide** for exact code snippets, `data-*` attribute explanations, and pre-deployment checklists.
 
 ## ✨ Key Features
 1. **Hero Section with Real Photo & Reference Pattern**:
